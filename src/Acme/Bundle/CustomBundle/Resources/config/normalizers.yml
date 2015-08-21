@@ -1,0 +1,8 @@
+services:
+    pim_serializer.normalizer.flat.brand:
+        public: false
+        class: Acme\Bundle\CustomBundle\Normalizer\BrandNormalizer
+        arguments:
+            - '@pim_catalog.filter.chained'
+        tags:
+            - { name: pim_serializer.normalizer, priority: 150 }

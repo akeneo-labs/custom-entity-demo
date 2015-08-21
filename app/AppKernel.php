@@ -19,7 +19,9 @@ class AppKernel extends Kernel
     {
         $bundles = [
             // your app bundles should be registered here
-            //new Acme\Bundle\AppBundle\AcmeAppBundle(),
+            new Acme\Bundle\AppBundle\AcmeAppBundle(),
+            new Pim\Bundle\CustomEntityBundle\PimCustomEntityBundle(),
+            new Acme\Bundle\CustomBundle\AcmeCustomBundle(),
         ];
 
         if (in_array($this->getEnvironment(), array('dev', 'test', 'behat'))) {
@@ -104,11 +106,9 @@ class AppKernel extends Kernel
             new Knp\Bundle\GaufretteBundle\KnpGaufretteBundle(),
             new APY\JsFormValidationBundle\APYJsFormValidationBundle(),
             new Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle(),
-            new Oneup\FlysystemBundle\OneupFlysystemBundle(),
             new Akeneo\Bundle\MeasureBundle\AkeneoMeasureBundle(),
             new Akeneo\Bundle\BatchBundle\AkeneoBatchBundle(),
             new Akeneo\Bundle\StorageUtilsBundle\AkeneoStorageUtilsBundle(),
-            new Akeneo\Bundle\FileStorageBundle\AkeneoFileStorageBundle(),
         ];
     }
 

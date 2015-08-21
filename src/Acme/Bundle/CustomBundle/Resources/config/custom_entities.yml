@@ -1,0 +1,48 @@
+custom_entities:
+    color:
+        entity_class: Acme\Bundle\AppBundle\Entity\Color
+        actions:
+            edit:
+                form_type: acme_enrich_color
+            create:
+                form_type: acme_enrich_color
+
+    fabric:
+        entity_class: Acme\Bundle\AppBundle\Entity\Fabric
+        actions:
+            edit:
+                form_type: acme_enrich_fabric
+            create:
+                form_type: acme_enrich_fabric
+
+    brand:
+        extends: quick_create
+        entity_class: Acme\Bundle\CustomBundle\Entity\Brand
+        actions:
+            index:
+                service: pim_custom_entity.action.index
+            edit:
+                form_type: acme_enrich_brand
+            create:
+                form_type: acme_enrich_brand
+            show:
+                service: pim_custom_entity.action.show
+                template: AcmeCustomBundle:Brand:show.html.twig
+            mass_edit:
+                form_type: acme_enrich_brand_mass_edit
+            quick_export:
+                service: pim_custom_entity.action.quick_export
+
+    pictogram:
+        entity_class: Acme\Bundle\CustomBundle\Entity\Pictogram
+        actions:
+            index:
+                service: pim_custom_entity.action.index
+            create:
+                form_type: acme_enrich_pictogram
+                form_options:
+                    translation_class: Acme\Bundle\CustomBundle\Entity\PictogramTranslation
+            edit:
+                form_type: acme_enrich_pictogram
+                form_options:
+                    translation_class: Acme\Bundle\CustomBundle\Entity\PictogramTranslation

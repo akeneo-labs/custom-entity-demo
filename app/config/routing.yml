@@ -33,6 +33,10 @@ pim_notification:
 pim_reference_data:
     resource: "@PimReferenceDataBundle/Resources/config/routing.yml"
 
+pim_customentity:
+    prefix: /enrich
+    resource: "@PimCustomEntityBundle/Resources/config/routing.yml"
+
 # Oro platform
 
 oro_default:
@@ -54,8 +58,9 @@ nelmio_api_doc:
 fos_js_routing:
     resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
 
-_liip_imagine:
-    resource: "@LiipImagineBundle/Resources/config/routing.xml"
+_imagine:
+    resource: .
+    type:     imagine
 
 _apy_jsformvalidation:
     resource: "@APYJsFormValidationBundle/Resources/config/routing/routing.yml"

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9b3dd162764917b456373f962b944def",
+    "hash": "84651c6b747296f21d704f214aae1ecb",
     "packages": [
         {
             "name": "akeneo/batch-bundle",
@@ -17,7 +17,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/akeneo/BatchBundle/zipball/b4acb261f190458277f701cbbb3cc178ecd1c22c",
+                "url": "https://api.github.com/repos/akeneo/BatchBundle/zipball/c738258a89e2c27bff6674ea681f84cfe7d2e286",
                 "reference": "b4acb261f190458277f701cbbb3cc178ecd1c22c",
                 "shasum": ""
             },
@@ -57,6 +57,62 @@
                 "writer"
             ],
             "time": "2015-08-06 17:31:48"
+        },
+        {
+            "name": "akeneo/custom-entity-bundle",
+            "version": "dev-master",
+            "target-dir": "Pim/Bundle/CustomEntityBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/akeneo/CustomEntityBundle.git",
+                "reference": "5113e0359c9c7646f0bfb7b2b91f4702e9be8390"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/akeneo/CustomEntityBundle/zipball/5113e0359c9c7646f0bfb7b2b91f4702e9be8390",
+                "reference": "5113e0359c9c7646f0bfb7b2b91f4702e9be8390",
+                "shasum": ""
+            },
+            "require": {
+                "akeneo/pim-community-dev": "1.4.*"
+            },
+            "require-dev": {
+                "fabpot/php-cs-fixer": "^2.0@dev",
+                "pdepend/pdepend": "2.1.*",
+                "phpmd/phpmd": "1.*",
+                "phpspec/phpspec": "2.1.*",
+                "squizlabs/php_codesniffer": "2.*"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.6.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Pim\\Bundle\\CustomEntityBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Akeneo",
+                    "homepage": "http://www.akeneo.com"
+                }
+            ],
+            "description": "Akeneo PIM Custom entity bundle",
+            "homepage": "http://www.akeneo.com",
+            "keywords": [
+                "PIM",
+                "akeneo",
+                "ecommerce",
+                "integration"
+            ],
+            "time": "2015-08-21 11:49:53"
         },
         {
             "name": "akeneo/measure-bundle",
@@ -4082,6 +4138,7 @@
         "akeneo/batch-bundle": 20,
         "akeneo/measure-bundle": 20,
         "oro/platform": 20,
+        "akeneo/custom-entity-bundle": 20,
         "doctrine/migrations": 15
     },
     "prefer-stable": false,
