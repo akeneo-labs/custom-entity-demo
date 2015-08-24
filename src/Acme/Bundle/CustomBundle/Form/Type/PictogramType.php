@@ -2,20 +2,21 @@
 
 namespace Acme\Bundle\CustomBundle\Form\Type;
 
+use Pim\Bundle\CustomEntityBundle\Form\Type\CustomEntityType;
 use Pim\Bundle\EnrichBundle\Form\Subscriber\DisableFieldSubscriber;
-use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
 /**
  * @author Romain Monceau <romain@akeneo.com>
  */
-class PictogramType extends AbstractType
+class PictogramType extends CustomEntityType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
+        parent::buildForm($builder, $options);
+
         $builder
-            ->add('code')
             ->add(
                 'label',
                 'pim_translatable_field',

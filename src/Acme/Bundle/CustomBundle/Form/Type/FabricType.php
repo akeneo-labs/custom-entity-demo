@@ -2,18 +2,19 @@
 
 namespace Acme\Bundle\CustomBundle\Form\Type;
 
-use Symfony\Component\Form\AbstractType;
+use Pim\Bundle\CustomEntityBundle\Form\Type\CustomEntityType;
 use Symfony\Component\Form\FormBuilderInterface;
 
 /**
  * @author Romain Monceau <romain@akeneo.com>
  */
-class FabricType extends AbstractType
+class FabricType extends CustomEntityType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
+        parent::buildForm($builder, $options);
+
         $builder
-            ->add('code')
             ->add('name')
             ->add('alternativeName');
     }
