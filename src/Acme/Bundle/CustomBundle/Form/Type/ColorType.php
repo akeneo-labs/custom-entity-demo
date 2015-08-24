@@ -2,13 +2,13 @@
 
 namespace Acme\Bundle\CustomBundle\Form\Type;
 
-use Symfony\Component\Form\AbstractType;
+use Pim\Bundle\CustomEntityBundle\Form\Type\CustomEntityType;
 use Symfony\Component\Form\FormBuilderInterface;
 
 /**
  * @author Romain Monceau <romain@akeneo.com>
  */
-class ColorType extends AbstractType
+class ColorType extends CustomEntityType
 {
     /**
      * @param FormBuilderInterface $builder
@@ -16,8 +16,9 @@ class ColorType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
+        parent::buildForm($builder, $options);
+
         $builder
-            ->add('code')
             ->add('name')
             ->add('hex')
             ->add('red')
