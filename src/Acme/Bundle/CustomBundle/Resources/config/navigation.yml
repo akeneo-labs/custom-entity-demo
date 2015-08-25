@@ -19,7 +19,7 @@ oro_menu_config:
     tree:
         application_menu:
             children:
-                pim_enrich_tab:
+                pim_reference_data_tab:
                     children:
                         acme_enrich_color: ~
                         acme_enrich_brand: ~
