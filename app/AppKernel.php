@@ -19,7 +19,6 @@ class AppKernel extends Kernel
     {
         $bundles = [
             // your app bundles should be registered here
-            new Acme\Bundle\AppBundle\AcmeAppBundle(),
             new Pim\Bundle\CustomEntityBundle\PimCustomEntityBundle(),
             new Acme\Bundle\CustomBundle\AcmeCustomBundle(),
         ];

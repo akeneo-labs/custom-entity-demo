@@ -1,0 +1,27 @@
+oro_menu_config:
+    items:
+        acme_enrich_color:
+            label:              'Colors'
+            route:              'pim_customentity_index'
+            routeParameters:    { customEntityName: color }
+        acme_enrich_brand:
+            label:              'Brands'
+            route:              'pim_customentity_index'
+            routeParameters:    { customEntityName: brand }
+        acme_enrich_fabric:
+            label:              'Fabrics'
+            route:              'pim_customentity_index'
+            routeParameters:    { customEntityName: fabric }
+        acme_enrich_pictogram:
+            label:              'Pictograms'
+            route:              'pim_customentity_index'
+            routeParameters:    { customEntityName: pictogram }
+    tree:
+        application_menu:
+            children:
+                pim_enrich_tab:
+                    children:
+                        acme_enrich_color: ~
+                        acme_enrich_brand: ~
+                        acme_enrich_fabric: ~
+                        acme_enrich_pictogram: ~

@@ -1,10 +1,8 @@
 datagrid:
     brand:
-        #extends: custom_entity
         options:
             entityHint: brand
         source:
-            #type: pim_custom_entity
             type: pim_datasource_default
             entity: Acme\Bundle\CustomBundle\Entity\Brand
             repository_method: createDatagridQueryBuilder

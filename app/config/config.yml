@@ -84,10 +84,10 @@ swiftmailer:
 
 pim_reference_data:
     fabrics:
-        class: Acme\Bundle\AppBundle\Entity\Fabric
+        class: Acme\Bundle\CustomBundle\Entity\Fabric
         type: multi
     color:
-        class: Acme\Bundle\AppBundle\Entity\Color
+        class: Acme\Bundle\CustomBundle\Entity\Color
         type: simple
     brands:
         class: Acme\Bundle\CustomBundle\Entity\Brand
@@ -100,4 +100,4 @@ akeneo_storage_utils:
     mapping_overrides:
         -
             original: Pim\Bundle\CatalogBundle\Model\ProductValue
-            override: Acme\Bundle\AppBundle\Model\ProductValue
+            override: Acme\Bundle\CustomBundle\Model\ProductValue
