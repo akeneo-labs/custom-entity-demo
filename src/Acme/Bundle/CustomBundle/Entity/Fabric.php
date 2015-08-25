@@ -2,8 +2,7 @@
 
 namespace Acme\Bundle\CustomBundle\Entity;
 
-use Pim\Component\ReferenceData\Model\AbstractReferenceData;
-use Pim\Component\ReferenceData\Model\ReferenceDataInterface;
+use Pim\Bundle\CustomEntityBundle\Entity\AbstractCustomEntity;
 
 /**
  * Acme Fabric entity (used as multi reference data)
@@ -12,7 +11,7 @@ use Pim\Component\ReferenceData\Model\ReferenceDataInterface;
  * @copyright 2015 Akeneo SAS (http://www.akeneo.com)
  * @license   http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
-class Fabric extends AbstractReferenceData implements ReferenceDataInterface
+class Fabric extends AbstractCustomEntity
 {
     /** @var string */
     protected $name;
@@ -59,8 +58,8 @@ class Fabric extends AbstractReferenceData implements ReferenceDataInterface
     /**
      * {@inheritdoc}
      */
-    public static function getLabelProperty()
+    public function getCustomEntityName()
     {
-        return 'name';
+        return 'fabric';
     }
 }

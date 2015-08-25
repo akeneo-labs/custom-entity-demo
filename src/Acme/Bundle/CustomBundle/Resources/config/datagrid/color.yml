@@ -17,6 +17,43 @@ datagrid:
             updated:
                 label: Updated
                 frontend_type: date
+        properties:
+            id: ~
+            show_link:
+                type: url
+                route: pim_customentity_show
+                params:
+                    - id
+                    - customEntityName
+            edit_link:
+                type: url
+                route: pim_customentity_edit
+                params:
+                    - id
+                    - customEntityName
+            delete_link:
+                type: url
+                route: pim_customentity_delete
+                params:
+                    - id
+                    - customEntityName
+        actions:
+            show:
+                type:      navigate
+                label:     Show the reference data
+                icon:      eye-open
+                link:      show_link
+            edit:
+                type:      navigate
+                label:     Edit the reference data
+                icon:      edit
+                link:      edit_link
+                rowAction: true
+            delete:
+                type:  delete
+                label: Delete the reference data
+                icon:  trash
+                link:  delete_link
         filters:
             columns:
                 code:

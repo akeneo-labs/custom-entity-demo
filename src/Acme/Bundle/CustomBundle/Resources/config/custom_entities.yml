@@ -1,6 +1,6 @@
 custom_entities:
     color:
-        entity_class: Acme\Bundle\AppBundle\Entity\Color
+        entity_class: Acme\Bundle\CustomBundle\Entity\Color
         actions:
             edit:
                 form_type: acme_enrich_color
@@ -8,7 +8,7 @@ custom_entities:
                 form_type: acme_enrich_color
 
     fabric:
-        entity_class: Acme\Bundle\AppBundle\Entity\Fabric
+        entity_class: Acme\Bundle\CustomBundle\Entity\Fabric
         actions:
             edit:
                 form_type: acme_enrich_fabric
