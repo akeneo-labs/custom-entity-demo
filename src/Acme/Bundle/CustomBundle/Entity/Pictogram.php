@@ -29,4 +29,12 @@ class Pictogram extends AbstractTranslatableCustomOption
     {
         return 'pictogram';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public static function getSortOrderColumn()
+    {
+        return 'label';
+    }
 }

@@ -62,4 +62,12 @@ class Fabric extends AbstractCustomEntity
     {
         return 'fabric';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public static function getSortOrderColumn()
+    {
+        return 'name';
+    }
 }
