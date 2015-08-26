@@ -26,6 +26,11 @@
 /web/bundles/
 /web/uploads/
 /web/js/
+/web/css/
+
+# Archive and filesystem
+/app/archive/
+/app/file_storage/
 
 # PHPUnit
 /app/phpunit.xml
