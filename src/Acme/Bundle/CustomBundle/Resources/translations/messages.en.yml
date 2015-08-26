@@ -1,0 +1,34 @@
+confirmation.remove.brand: Do you really want to delete this brand ?
+flash.brand:
+    removed: The brand has been removed
+    updated: The brand has been updated
+error.removing.brand: The brand could not be removed
+brand:
+    overview: Brand overview
+    edit: Edit a brand
+    create: Create a brand
+    this:
+        edit: Edit this brand
+        show: Show this brand
+        delete: Delete this brand
+
+btn.create.brand: Create a brand
+
+pim_custom_entity.reference_data.brand:
+    edit: Edit a brand
+    create: Create a brand
+    index: List brands
+    delete: Delete a brand
+    menu_entry: Brands
+
+pim_custom_entity.reference_data.color:
+    edit: Edit a color
+    create: Create a color
+    index: List colors
+    menu_entry: Colors
+
+pim_custom_entity.reference_data.fabric:
+    menu_entry: Fabrics
+
+pim_custom_entity.reference_data.pictogram:
+    menu_entry: Pictograms
