@@ -26,6 +26,7 @@ datagrid:
             edit_link:
                 type: url
                 route: pim_customentity_edit
+                acl_resource: acme_enrich_brand_edit
                 params:
                     - id
                     - customEntityName
@@ -38,18 +39,19 @@ datagrid:
         actions:
             show:
                 type:      navigate
-                label:     Show the reference data
+                label:     brand.this.show
                 icon:      eye-open
                 link:      show_link
             edit:
                 type:      navigate
-                label:     Edit the reference data
+                label:     brand.this.edit
+                acl_resource: acme_enrich_brand_edit
                 icon:      edit
                 link:      edit_link
                 rowAction: true
             delete:
                 type:  delete
-                label: Delete the reference data
+                label: brand.this.delete
                 icon:  trash
                 link:  delete_link
         filters:

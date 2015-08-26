@@ -1,19 +1,20 @@
 oro_menu_config:
     items:
         acme_enrich_color:
-            label:              'Colors'
+            label:              'pim_custom_entity.reference_data.color.menu_entry'
             route:              'pim_customentity_index'
             routeParameters:    { customEntityName: color }
         acme_enrich_brand:
-            label:              'Brands'
+            label:              'pim_custom_entity.reference_data.brand.menu_entry'
             route:              'pim_customentity_index'
             routeParameters:    { customEntityName: brand }
+            aclResourceId:      acme_enrich_brand_index
         acme_enrich_fabric:
-            label:              'Fabrics'
+            label:              'pim_custom_entity.reference_data.fabric.menu_entry'
             route:              'pim_customentity_index'
             routeParameters:    { customEntityName: fabric }
         acme_enrich_pictogram:
-            label:              'Pictograms'
+            label:              'pim_custom_entity.reference_data.pictogram.menu_entry'
             route:              'pim_customentity_index'
             routeParameters:    { customEntityName: pictogram }
     tree:
