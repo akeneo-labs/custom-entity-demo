@@ -70,4 +70,12 @@ class Fabric extends AbstractCustomEntity
     {
         return 'name';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public static function getLabelProperty()
+    {
+        return 'name';
+    }
 }
