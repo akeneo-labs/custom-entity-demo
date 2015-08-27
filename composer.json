@@ -23,7 +23,7 @@
         "akeneo/batch-bundle": "0.4.x-dev",
         "akeneo/measure-bundle": "0.4.x-dev",
         "oro/platform": "dev-pim-1.4",
-        "akeneo/custom-entity-bundle": "dev-master"
+        "akeneo-labs/custom-entity-bundle": "dev-master"
     },
     "require-dev": {
         "sensio/generator-bundle": "2.3.5",
