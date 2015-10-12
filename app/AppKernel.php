@@ -74,6 +74,7 @@ class AppKernel extends Kernel
             new Pim\Bundle\EntityBundle\PimEntityBundle(),
 
             // PIM bundles
+            new Pim\Bundle\AnalyticsBundle\PimAnalyticsBundle(),
             new Pim\Bundle\DashboardBundle\PimDashboardBundle(),
             new Pim\Bundle\InstallerBundle\PimInstallerBundle(),
             new Pim\Bundle\UIBundle\PimUIBundle(),
@@ -109,6 +110,7 @@ class AppKernel extends Kernel
             new Akeneo\Bundle\MeasureBundle\AkeneoMeasureBundle(),
             new Akeneo\Bundle\BatchBundle\AkeneoBatchBundle(),
             new Akeneo\Bundle\StorageUtilsBundle\AkeneoStorageUtilsBundle(),
+            new Akeneo\Bundle\ClassificationBundle\AkeneoClassificationBundle(),
             new Akeneo\Bundle\FileStorageBundle\AkeneoFileStorageBundle(),
         ];
     }
