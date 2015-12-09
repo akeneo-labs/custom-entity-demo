@@ -2,12 +2,12 @@
 
 namespace Acme\Bundle\CustomBundle\Entity;
 
-use Pim\Bundle\CustomEntityBundle\Entity\AbstractTranslatableCustomOption;
+use Pim\Bundle\CustomEntityBundle\Entity\AbstractTranslatableCustomEntity;
 
 /**
  * @author Romain Monceau <romain@akeneo.com>
  */
-class Pictogram extends AbstractTranslatableCustomOption
+class Pictogram extends AbstractTranslatableCustomEntity
 {
     /**
      * Get translation full qualified class name
