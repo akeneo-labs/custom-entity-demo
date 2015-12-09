@@ -8,6 +8,11 @@ Acme\Bundle\CustomBundle\Model\ProductValue:
             joinColumn:
                 name: color_id
                 referencedColumnName: id
+        pictogram:
+            targetEntity: Acme\Bundle\CustomBundle\Entity\Pictogram
+            joinColumn:
+                name: pictogram_id
+                referencedColumnName: id
     manyToMany:
         fabrics:
             targetEntity: Acme\Bundle\CustomBundle\Entity\Fabric
