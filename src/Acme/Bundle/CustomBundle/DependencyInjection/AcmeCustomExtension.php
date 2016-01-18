@@ -18,5 +18,6 @@ class AcmeCustomExtension extends Extension
         $loader->load('form_types.yml');
         $loader->load('normalizers.yml');
         $loader->load('entities.yml');
+        $loader->load('repositories.yml');
     }
 }

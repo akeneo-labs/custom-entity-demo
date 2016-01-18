@@ -5,7 +5,6 @@ namespace Acme\Bundle\CustomBundle\Entity;
 use Pim\Bundle\CustomEntityBundle\Entity\AbstractCustomOptionTranslation;
 use Pim\Bundle\TranslationBundle\Entity\AbstractTranslation;
 
-
 /**
  * @author Romain Monceau <romain@akeneo.com>
  */
