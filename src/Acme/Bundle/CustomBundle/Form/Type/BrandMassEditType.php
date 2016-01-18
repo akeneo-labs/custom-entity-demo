@@ -16,7 +16,15 @@ class BrandMassEditType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('code', null, ['select2' => true]);
+        $builder
+            ->add('fabric', 'entity', [
+                'class'        => 'AcmeCustomBundle:Fabric',
+                'choice_label' => 'name',
+                'required'     => false,
+                'placeholder'  => 'Choose a fabric',
+                'empty_data'   => null
+            ])
+        ;
     }
 
     /**

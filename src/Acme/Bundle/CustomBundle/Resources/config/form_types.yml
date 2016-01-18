@@ -9,6 +9,11 @@ services:
         tags:
             - { name: form.type, alias: acme_enrich_fabric }
 
+    pim_custom.form.type.brand:
+        class: Acme\Bundle\CustomBundle\Form\Type\BrandType
+        tags:
+            - { name: form.type, alias: acme_enrich_brand }
+
     pim_custom.form.type.brand_mass_edit:
         class: Acme\Bundle\CustomBundle\Form\Type\BrandMassEditType
         tags:

@@ -15,4 +15,10 @@ Acme\Bundle\CustomBundle\Entity\Brand:
             unique: true
         sortOrder:
             type: integer
+    manyToOne:
+        fabric:
+            targetEntity: Acme\Bundle\CustomBundle\Entity\Fabric
+            joinColum:
+                name: fabric_id
+                referencedColumnName: id
     lifecycleCallbacks: {  }
