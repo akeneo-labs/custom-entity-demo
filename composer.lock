@@ -14,12 +14,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/akeneo-labs/CustomEntityBundle.git",
-                "reference": "2645374fddfce0208f185fe282e74382d66a8b1f"
+                "reference": "9494278dfeb576b05a68a27f6757044e329b3cac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/akeneo-labs/CustomEntityBundle/zipball/2645374fddfce0208f185fe282e74382d66a8b1f",
-                "reference": "2645374fddfce0208f185fe282e74382d66a8b1f",
+                "url": "https://api.github.com/repos/akeneo-labs/CustomEntityBundle/zipball/9494278dfeb576b05a68a27f6757044e329b3cac",
+                "reference": "9494278dfeb576b05a68a27f6757044e329b3cac",
                 "shasum": ""
             },
             "require": {
@@ -61,7 +61,7 @@
                 "ecommerce",
                 "integration"
             ],
-            "time": "2015-09-28 16:13:37"
+            "time": "2016-01-08 14:24:37"
         },
         {
             "name": "akeneo/batch-bundle",
@@ -159,16 +159,16 @@
         },
         {
             "name": "akeneo/pim-community-dev",
-            "version": "v1.4.12",
+            "version": "v1.4.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/akeneo/pim-community-dev.git",
-                "reference": "6b022f41310137368c61f0074a49061e10c4512f"
+                "reference": "c4ba36b30a6bd0fe01e2bfc8bfa0563b7280cb60"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/akeneo/pim-community-dev/zipball/6b022f41310137368c61f0074a49061e10c4512f",
-                "reference": "6b022f41310137368c61f0074a49061e10c4512f",
+                "url": "https://api.github.com/repos/akeneo/pim-community-dev/zipball/c4ba36b30a6bd0fe01e2bfc8bfa0563b7280cb60",
+                "reference": "c4ba36b30a6bd0fe01e2bfc8bfa0563b7280cb60",
                 "shasum": ""
             },
             "require": {
@@ -230,6 +230,7 @@
                 "behat/mink-selenium2-driver": "1.2.0",
                 "behat/symfony2-extension": "1.1.2",
                 "behat/transliterator": "1.0.1",
+                "doctrine/mongodb-odm-bundle": "v3.0.1",
                 "kriswallsmith/buzz": ">=0.5",
                 "pdepend/pdepend": "2.1.*",
                 "phpmd/phpmd": "1.*",
@@ -269,7 +270,8 @@
             "autoload": {
                 "psr-0": {
                     "": "src/",
-                    "Context": "features/"
+                    "Context": "features/",
+                    "Pim\\Behat": "features/"
                 }
             },
             "scripts": {
@@ -305,10 +307,10 @@
             ],
             "description": "Akeneo PIM, the future of catalog management is open!",
             "support": {
-                "source": "https://github.com/akeneo/pim-community-dev/tree/v1.4.12",
+                "source": "https://github.com/akeneo/pim-community-dev/tree/v1.4.17",
                 "issues": "https://github.com/akeneo/pim-community-dev/issues"
             },
-            "time": "2015-12-03 15:06:31"
+            "time": "2016-01-18 12:21:53"
         },
         {
             "name": "apy/jsfv-bundle",
@@ -819,16 +821,16 @@
         },
         {
             "name": "doctrine/dbal",
-            "version": "v2.4.4",
+            "version": "v2.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "a370e5b95e509a7809d11f3d280acfc9310d464b"
+                "reference": "5a1f4bf34d61d997ccd9f0539fbc14c7a772aa16"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/a370e5b95e509a7809d11f3d280acfc9310d464b",
-                "reference": "a370e5b95e509a7809d11f3d280acfc9310d464b",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/5a1f4bf34d61d997ccd9f0539fbc14c7a772aa16",
+                "reference": "5a1f4bf34d61d997ccd9f0539fbc14c7a772aa16",
                 "shasum": ""
             },
             "require": {
@@ -878,7 +880,7 @@
                 "persistence",
                 "queryobject"
             ],
-            "time": "2015-01-12 21:57:01"
+            "time": "2016-01-05 22:18:20"
         },
         {
             "name": "doctrine/doctrine-bundle",
@@ -2744,16 +2746,16 @@
         },
         {
             "name": "michelf/php-markdown",
-            "version": "1.5.0",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/michelf/php-markdown.git",
-                "reference": "e1aabe18173231ebcefc90e615565742fc1c7fd9"
+                "reference": "156e56ee036505ec637d761ee62dc425d807183c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/michelf/php-markdown/zipball/e1aabe18173231ebcefc90e615565742fc1c7fd9",
-                "reference": "e1aabe18173231ebcefc90e615565742fc1c7fd9",
+                "url": "https://api.github.com/repos/michelf/php-markdown/zipball/156e56ee036505ec637d761ee62dc425d807183c",
+                "reference": "156e56ee036505ec637d761ee62dc425d807183c",
                 "shasum": ""
             },
             "require": {
@@ -2776,14 +2778,14 @@
             ],
             "authors": [
                 {
-                    "name": "John Gruber",
-                    "homepage": "http://daringfireball.net/"
-                },
-                {
                     "name": "Michel Fortin",
                     "email": "michel.fortin@michelf.ca",
                     "homepage": "https://michelf.ca/",
                     "role": "Developer"
+                },
+                {
+                    "name": "John Gruber",
+                    "homepage": "https://daringfireball.net/"
                 }
             ],
             "description": "PHP Markdown",
@@ -2791,7 +2793,7 @@
             "keywords": [
                 "markdown"
             ],
-            "time": "2015-03-01 12:03:08"
+            "time": "2015-12-24 01:37:31"
         },
         {
             "name": "monolog/monolog",
@@ -3375,16 +3377,16 @@
         },
         {
             "name": "sensio/framework-extra-bundle",
-            "version": "v3.0.11",
+            "version": "v3.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioFrameworkExtraBundle.git",
-                "reference": "a79e205737b58d557c05caef6dfa8f94d8084bca"
+                "reference": "3e8936fe13aa4086644977d334d8fcd275f50357"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/a79e205737b58d557c05caef6dfa8f94d8084bca",
-                "reference": "a79e205737b58d557c05caef6dfa8f94d8084bca",
+                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/3e8936fe13aa4086644977d334d8fcd275f50357",
+                "reference": "3e8936fe13aa4086644977d334d8fcd275f50357",
                 "shasum": ""
             },
             "require": {
@@ -3426,7 +3428,7 @@
                 "annotations",
                 "controllers"
             ],
-            "time": "2015-10-28 15:47:04"
+            "time": "2015-12-18 17:39:27"
         },
         {
             "name": "sensio/generator-bundle",
@@ -3978,16 +3980,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.23.1",
+            "version": "v1.23.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "d9b6333ae8dd2c8e3fd256e127548def0bc614c6"
+                "reference": "ae53fc2c312fdee63773b75cb570304f85388b08"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/d9b6333ae8dd2c8e3fd256e127548def0bc614c6",
-                "reference": "d9b6333ae8dd2c8e3fd256e127548def0bc614c6",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/ae53fc2c312fdee63773b75cb570304f85388b08",
+                "reference": "ae53fc2c312fdee63773b75cb570304f85388b08",
                 "shasum": ""
             },
             "require": {
@@ -4035,7 +4037,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2015-11-05 12:49:06"
+            "time": "2016-01-11 14:02:19"
         },
         {
             "name": "willdurand/js-translation-bundle",
