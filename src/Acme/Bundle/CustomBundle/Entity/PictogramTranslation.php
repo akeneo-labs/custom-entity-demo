@@ -3,7 +3,7 @@
 namespace Acme\Bundle\CustomBundle\Entity;
 
 use Pim\Bundle\CustomEntityBundle\Entity\AbstractCustomOptionTranslation;
-use Pim\Bundle\TranslationBundle\Entity\AbstractTranslation;
+use Akeneo\Component\Localization\Model\AbstractTranslation;
 
 /**
  * @author Romain Monceau <romain@akeneo.com>

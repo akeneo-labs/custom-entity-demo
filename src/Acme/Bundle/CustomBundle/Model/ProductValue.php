@@ -7,7 +7,7 @@ use Acme\Bundle\CustomBundle\Entity\Color;
 use Acme\Bundle\CustomBundle\Entity\Fabric;
 use Acme\Bundle\CustomBundle\Entity\Pictogram;
 use Doctrine\Common\Collections\ArrayCollection;
-use Pim\Bundle\CatalogBundle\Model\ProductValue as PimProductValue;
+use Pim\Component\Catalog\Model\ProductValue as PimProductValue;
 
 /**
  * Override of the product value so it takes new custom entities into account.

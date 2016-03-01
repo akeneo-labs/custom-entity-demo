@@ -6,7 +6,7 @@ imports:
 
 framework:
     #esi:             ~
-    translator:      { fallback: en_US }
+    translator:      { fallback: en }
     secret:          %secret%
     router:
         resource: "%kernel.root_dir%/config/routing.yml"
@@ -69,7 +69,7 @@ doctrine:
                 password:     "%database_password%"
                 charset:      UTF8
         types:
-            datetime: Oro\Bundle\LocaleBundle\DoctrineExtensions\DBAL\Types\UTCDateTimeType
+            datetime: Akeneo\Bundle\StorageUtilsBundle\Doctrine\DBAL\Types\UTCDateTimeType
     orm:
         auto_generate_proxy_classes: "%kernel.debug%"
         auto_mapping: true
@@ -99,5 +99,18 @@ pim_reference_data:
 akeneo_storage_utils:
     mapping_overrides:
         -
-            original: Pim\Bundle\CatalogBundle\Model\ProductValue
+            original: Pim\Component\Catalog\Model\ProductValue
             override: Acme\Bundle\CustomBundle\Model\ProductValue
+
+pim_catalog:
+    localization:
+        decimal_separators:
+            - { value: '.', label: 'dot (.)' }
+            - { value: ',', label: 'comma (,)' }
+            - { value: '٫', label: 'arabic decimal separator (٫)' }
+        date_formats:
+            - { value: 'yyyy-MM-dd', label: 'yyyy-mm-dd' }
+            - { value: 'yyyy/MM/dd', label: 'yyyy/mm/dd' }
+            - { value: 'MM/dd/yyyy', label: 'mm/dd/yyyy' }
+            - { value: 'dd/MM/yyyy', label: 'dd/mm/yyyy' }
+            - { value: 'dd.MM.yyyy', label: 'dd.mm.yyyy' }

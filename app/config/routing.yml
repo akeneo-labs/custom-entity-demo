@@ -32,12 +32,11 @@ pim_pdf_generator:
 pim_notification:
     resource: "@PimNotificationBundle/Resources/config/routing.yml"
 
+pim_localization:
+    resource: "@PimLocalizationBundle/Resources/config/routing.yml"
+
 pim_reference_data:
     resource: "@PimReferenceDataBundle/Resources/config/routing.yml"
-
-pim_customentity:
-    prefix: /reference-data
-    resource: "@PimCustomEntityBundle/Resources/config/routing.yml"
 
 # Oro platform
 
@@ -47,9 +46,20 @@ oro_default:
         template:    PimDashboardBundle:Dashboard:index.html.twig
         _controller: FrameworkBundle:Template:template
 
-oro_auto_routing:
-    resource: .
-    type:     oro_auto
+oro_user:
+    resource: "@OroUserBundle/Resources/config/oro/routing.yml"
+
+oro_config:
+    resource: "@OroConfigBundle/Resources/config/oro/routing.yml"
+
+oro_datagrid:
+    resource: "@OroDataGridBundle/Resources/config/oro/routing.yml"
+
+oro_navigation:
+    resource: "@OroNavigationBundle/Resources/config/oro/routing.yml"
+
+oro_translation:
+    resource: "@OroTranslationBundle/Resources/config/oro/routing.yml"
 
 # other third party
 
@@ -65,3 +75,8 @@ _liip_imagine:
 
 _apy_jsformvalidation:
     resource: "@APYJsFormValidationBundle/Resources/config/routing/routing.yml"
+
+# Custom entity bundle
+pim_customentity:
+    prefix: /reference-data
+    resource: "@PimCustomEntityBundle/Resources/config/routing.yml"
