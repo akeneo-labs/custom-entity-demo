@@ -4,38 +4,39 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1f41fc621af8f59d4664f6ea2db381ac",
-    "content-hash": "bb5457787582e3f8d0e9f44b57f63235",
+    "hash": "6b5173aa9ba9452fb0558e1547466c98",
+    "content-hash": "904da4349d854bb7cc6bba78ca3c073b",
     "packages": [
         {
             "name": "akeneo-labs/custom-entity-bundle",
-            "version": "v1.6.0",
+            "version": "dev-master",
             "target-dir": "Pim/Bundle/CustomEntityBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/akeneo-labs/CustomEntityBundle.git",
-                "reference": "2645374fddfce0208f185fe282e74382d66a8b1f"
+                "reference": "7c589483816cf39286912960fda9fe3ba446ae5f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/akeneo-labs/CustomEntityBundle/zipball/2645374fddfce0208f185fe282e74382d66a8b1f",
-                "reference": "2645374fddfce0208f185fe282e74382d66a8b1f",
+                "url": "https://api.github.com/repos/akeneo-labs/CustomEntityBundle/zipball/7c589483816cf39286912960fda9fe3ba446ae5f",
+                "reference": "7c589483816cf39286912960fda9fe3ba446ae5f",
                 "shasum": ""
             },
             "require": {
-                "akeneo/pim-community-dev": "1.4.*"
+                "akeneo/pim-community-dev": "1.5.x-dev",
+                "doctrine/migrations": "1.0.0-alpha3@alpha"
             },
             "require-dev": {
-                "fabpot/php-cs-fixer": "^2.0@dev",
-                "pdepend/pdepend": "2.1.*",
-                "phpmd/phpmd": "1.*",
+                "fabpot/php-cs-fixer": "@stable",
+                "henrikbjorn/phpspec-code-coverage": "1.0.*",
+                "phpmd/phpmd": "2.3.*",
                 "phpspec/phpspec": "2.1.*",
-                "squizlabs/php_codesniffer": "2.*"
+                "squizlabs/php_codesniffer": "2.3.*"
             },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.6.x-dev"
+                    "dev-master": "1.7.x-dev"
                 }
             },
             "autoload": {
@@ -59,60 +60,10 @@
                 "PIM",
                 "akeneo",
                 "ecommerce",
-                "integration"
+                "integration",
+                "reference data"
             ],
-            "time": "2015-09-28 16:13:37"
-        },
-        {
-            "name": "akeneo/batch-bundle",
-            "version": "0.4.5",
-            "target-dir": "Akeneo/Bundle/BatchBundle",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/akeneo/BatchBundle.git",
-                "reference": "c454a65bd41f9311481a5045218bc45f49e67a52"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/akeneo/BatchBundle/zipball/c454a65bd41f9311481a5045218bc45f49e67a52",
-                "reference": "c454a65bd41f9311481a5045218bc45f49e67a52",
-                "shasum": ""
-            },
-            "require": {
-                "doctrine/orm": "^2.1.3",
-                "monolog/monolog": "^1.1.0",
-                "php": ">=5.4.4",
-                "symfony/swiftmailer-bundle": "^2.3.5",
-                "symfony/symfony": "^2.1"
-            },
-            "require-dev": {
-                "phpspec/phpspec": "2.1.*"
-            },
-            "type": "symfony-bundle",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.4.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Akeneo\\Bundle\\BatchBundle": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Akeneo Batch Bundle",
-            "keywords": [
-                "akeneo",
-                "batch",
-                "job",
-                "processor",
-                "reader",
-                "writer"
-            ],
-            "time": "2015-11-04 13:28:03"
+            "time": "2016-03-01 10:15:01"
         },
         {
             "name": "akeneo/measure-bundle",
@@ -159,20 +110,19 @@
         },
         {
             "name": "akeneo/pim-community-dev",
-            "version": "v1.4.20",
+            "version": "1.5.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/akeneo/pim-community-dev.git",
-                "reference": "755c3adb0aab3575ef2e1ffd9cbb543682317b0f"
+                "reference": "77addeba790e0a09b3e4320837287ac6f44734bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/akeneo/pim-community-dev/zipball/755c3adb0aab3575ef2e1ffd9cbb543682317b0f",
-                "reference": "755c3adb0aab3575ef2e1ffd9cbb543682317b0f",
+                "url": "https://api.github.com/repos/akeneo/pim-community-dev/zipball/77addeba790e0a09b3e4320837287ac6f44734bd",
+                "reference": "77addeba790e0a09b3e4320837287ac6f44734bd",
                 "shasum": ""
             },
             "require": {
-                "akeneo/batch-bundle": "0.4.5",
                 "akeneo/measure-bundle": "0.4.0",
                 "apy/jsfv-bundle": "2.0.1",
                 "ass/xmlsecurity": "1.1.1",
@@ -194,8 +144,6 @@
                 "incenteev/composer-parameter-handler": "2.1.1",
                 "jms/serializer": "1.0.0",
                 "jms/serializer-bundle": "1.0.0",
-                "knplabs/gaufrette": "0.1.9",
-                "knplabs/knp-gaufrette-bundle": "0.1.7",
                 "knplabs/knp-menu": "2.0.1",
                 "knplabs/knp-menu-bundle": "2.0.0",
                 "kriswallsmith/assetic": "1.1.3",
@@ -207,7 +155,6 @@
                 "monolog/monolog": "1.10.0",
                 "nelmio/api-doc-bundle": "2.9.0",
                 "oneup/flysystem-bundle": "1.1.0",
-                "oro/platform": "0.10.7",
                 "php": ">=5.4.4",
                 "sensio/distribution-bundle": "~4.0",
                 "sensio/framework-extra-bundle": "~3.0,>=3.0.2",
@@ -220,7 +167,8 @@
                 "twig/extensions": "1.2.0"
             },
             "require-dev": {
-                "akeneo/phpspec-skip-example-extension": "1.1.*",
+                "akeneo/php-coupling-detector": "dev-master",
+                "akeneo/phpspec-skip-example-extension": "1.2.*",
                 "behat/behat": "2.5.5",
                 "behat/common-contexts": "1.2.0",
                 "behat/gherkin": "2.3.5",
@@ -230,12 +178,11 @@
                 "behat/mink-selenium2-driver": "1.2.0",
                 "behat/symfony2-extension": "1.1.2",
                 "behat/transliterator": "1.0.1",
-                "doctrine/mongodb-odm": "v1.0.0-BETA12@dev",
-                "doctrine/mongodb-odm-bundle": "v3.0.0-BETA6",
+                "doctrine/mongodb-odm-bundle": "3.0.1",
                 "kriswallsmith/buzz": ">=0.5",
                 "pdepend/pdepend": "2.1.*",
                 "phpmd/phpmd": "1.*",
-                "phpspec/phpspec": "2.1.*",
+                "phpspec/phpspec": "2.4.*",
                 "phpunit/phpunit": "3.7.*",
                 "sensiolabs/behat-page-object-extension": "1.0.1",
                 "squizlabs/php_codesniffer": "2.*"
@@ -261,7 +208,8 @@
                     }
                 },
                 "branch-alias": {
-                    "dev-master": "1.5.x-dev",
+                    "dev-master": "1.6.x-dev",
+                    "dev-1.5": "1.5.x-dev",
                     "dev-1.4": "1.4.x-dev",
                     "dev-1.3": "1.3.x-dev",
                     "dev-1.2": "1.2.x-dev",
@@ -274,6 +222,9 @@
                     "": "src/",
                     "Context": "features/",
                     "Pim\\Behat": "features/"
+                },
+                "psr-4": {
+                    "Pim\\Upgrade\\": "upgrades/"
                 }
             },
             "scripts": {
@@ -309,10 +260,10 @@
             ],
             "description": "Akeneo PIM, the future of catalog management is open!",
             "support": {
-                "source": "https://github.com/akeneo/pim-community-dev/tree/v1.4.20",
+                "source": "https://github.com/akeneo/pim-community-dev/tree/1.5",
                 "issues": "https://github.com/akeneo/pim-community-dev/issues"
             },
-            "time": "2016-02-24 10:12:46"
+            "time": "2016-02-29 17:01:22"
         },
         {
             "name": "apy/jsfv-bundle",
@@ -2124,150 +2075,6 @@
             "time": "2015-06-23 19:27:08"
         },
         {
-            "name": "knplabs/gaufrette",
-            "version": "v0.1.9",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/KnpLabs/Gaufrette.git",
-                "reference": "4c73bb66ff41d7c9beb57372a82047cf5dcc6d1c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/Gaufrette/zipball/4c73bb66ff41d7c9beb57372a82047cf5dcc6d1c",
-                "reference": "4c73bb66ff41d7c9beb57372a82047cf5dcc6d1c",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.2"
-            },
-            "require-dev": {
-                "amazonwebservices/aws-sdk-for-php": "1.5.*",
-                "aws/aws-sdk-php": "~2",
-                "doctrine/dbal": ">=2.3",
-                "dropbox-php/dropbox-php": "*",
-                "google/apiclient": "~1.1",
-                "herzult/php-ssh": "*",
-                "microsoft/windowsazure": "dev-master",
-                "mikey179/vfsstream": "~1.2.0",
-                "phpseclib/phpseclib": "dev-master",
-                "phpspec/phpspec": "2.0.*",
-                "phpunit/phpunit": "3.7.*",
-                "rackspace/php-opencloud": "1.9.*"
-            },
-            "suggest": {
-                "amazonwebservices/aws-sdk-for-php": "to use the legacy Amazon S3 adapters",
-                "aws/aws-sdk-php": "to use the Amazon S3 adapter",
-                "doctrine/dbal": "to use the Doctrine DBAL adapter",
-                "dropbox-php/dropbox-php": "to use the Dropbox adapter",
-                "ext-apc": "to use the APC adapter",
-                "ext-curl": "*",
-                "ext-fileinfo": "This extension is used to automatically detect the content-type of a file in the AwsS3, OpenCloud, AzureBlogStorage and GoogleCloudStorage adapters",
-                "ext-mbstring": "*",
-                "ext-mongo": "*",
-                "ext-zip": "to use the Zip adapter",
-                "google/apiclient": "to use GoogleCloudStorage adapter",
-                "herzult/php-ssh": "to use SFtp adapter",
-                "knplabs/knp-gaufrette-bundle": "to use with Symfony2",
-                "microsoft/windowsazure": "to use Microsoft Azure Blob Storage adapter",
-                "phpseclib/phpseclib": "to use PhpseclibSftp adapter",
-                "rackspace/php-opencloud": "to use Opencloud adapter"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.2.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Gaufrette": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "The contributors",
-                    "homepage": "http://github.com/knplabs/Gaufrette/contributors"
-                },
-                {
-                    "name": "KnpLabs Team",
-                    "homepage": "http://knplabs.com"
-                }
-            ],
-            "description": "PHP5 library that provides a filesystem abstraction layer",
-            "homepage": "http://knplabs.com",
-            "keywords": [
-                "abstraction",
-                "file",
-                "filesystem",
-                "media"
-            ],
-            "time": "2015-03-09 08:06:57"
-        },
-        {
-            "name": "knplabs/knp-gaufrette-bundle",
-            "version": "v0.1.7",
-            "target-dir": "Knp/Bundle/GaufretteBundle",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/KnpLabs/KnpGaufretteBundle.git",
-                "reference": "f33008584345452c3122bb4eaac0ded1d6084c51"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/KnpGaufretteBundle/zipball/f33008584345452c3122bb4eaac0ded1d6084c51",
-                "reference": "f33008584345452c3122bb4eaac0ded1d6084c51",
-                "shasum": ""
-            },
-            "require": {
-                "knplabs/gaufrette": "~0.1.7",
-                "symfony/framework-bundle": "2.*"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "3.7.*",
-                "symfony/console": "2.*",
-                "symfony/yaml": "2.*"
-            },
-            "type": "symfony-bundle",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.2.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Knp\\Bundle\\GaufretteBundle": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Antoine Hérault",
-                    "email": "antoine.herault@gmail.com",
-                    "homepage": "https://github.com/Herzult"
-                },
-                {
-                    "name": "The contributors",
-                    "homepage": "https://github.com/knplabs/KnpGaufretteBundle/contributors"
-                }
-            ],
-            "description": "Allows to easily use the Gaufrette library in a Symfony project",
-            "homepage": "http://knplabs.com",
-            "keywords": [
-                "abstraction",
-                "file",
-                "filesystem",
-                "media"
-            ],
-            "time": "2014-03-24 22:15:03"
-        },
-        {
             "name": "knplabs/knp-menu",
             "version": "v2.0.1",
             "source": {
@@ -3015,37 +2822,6 @@
                 "filesystem"
             ],
             "time": "2015-05-08 12:44:48"
-        },
-        {
-            "name": "oro/platform",
-            "version": "0.10.7",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/akeneo/platform.git",
-                "reference": "04aecb850588d11de436653e1d75f37a69f26e94"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/akeneo/platform/zipball/04aecb850588d11de436653e1d75f37a69f26e94",
-                "reference": "04aecb850588d11de436653e1d75f37a69f26e94",
-                "shasum": ""
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Oro\\Bundle": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "description": "Business Application Platform (BAP)",
-            "homepage": "https://github.com/orocrm/platform.git",
-            "support": {
-                "source": "https://github.com/akeneo/platform/tree/0.10.7",
-                "issues": "https://github.com/akeneo/platform/issues"
-            },
-            "time": "2015-11-23 13:51:58"
         },
         {
             "name": "phenx/php-font-lib",
@@ -4150,6 +3926,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "akeneo/pim-community-dev": 20,
+        "akeneo-labs/custom-entity-bundle": 20,
         "doctrine/migrations": 15
     },
     "prefer-stable": false,

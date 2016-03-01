@@ -2,13 +2,13 @@
 
 namespace Acme\Bundle\CustomBundle\Entity;
 
-use Pim\Bundle\CustomEntityBundle\Entity\AbstractCustomOptionTranslation;
-use Pim\Bundle\TranslationBundle\Entity\AbstractTranslation;
+use Akeneo\Component\Localization\Model\TranslationInterface;
+use Akeneo\Component\Localization\Model\AbstractTranslation;
 
 /**
  * @author Romain Monceau <romain@akeneo.com>
  */
-class PictogramTranslation extends AbstractTranslation
+class PictogramTranslation extends AbstractTranslation implements TranslationInterface
 {
     /**
      * @var string $label
@@ -18,7 +18,7 @@ class PictogramTranslation extends AbstractTranslation
     /**
      * @param string $label
      *
-     * @return AbstractCustomOptionTranslation
+     * @return TranslationInterface
      */
     public function setLabel($label)
     {
@@ -28,7 +28,7 @@ class PictogramTranslation extends AbstractTranslation
     }
 
     /**
-     * @return AbstractCustomOptionTranslation
+     * @return TranslationInterface
      */
     public function getLabel()
     {
