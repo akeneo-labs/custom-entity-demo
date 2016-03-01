@@ -15,13 +15,13 @@
             "Context": "features/"
         },
         "psr-4": {
-          "Pim\\Upgrade\\": "upgrades/"
+            "Pim\\Upgrade\\": "upgrades/"
         }
     },
     "require": {
-        "akeneo/pim-community-dev": "~1.4.3",
+        "akeneo/pim-community-dev": "~1.4.20",
         "sensio/generator-bundle": "2.3.5",
-        "akeneo-labs/custom-entity-bundle": "dev-master"
+        "akeneo-labs/custom-entity-bundle": "1.6.*"
     },
     "require-dev": {
         "doctrine/migrations": "1.0.0-alpha3@alpha",

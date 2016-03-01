@@ -9,6 +9,9 @@ datagrid:
         columns:
             code:
                 label: Code
+            fabric:
+                label: Fabric
+                class: AcmeCustomBundle:Brand
             created:
                 label: Created
                 frontend_type: date
@@ -70,6 +73,14 @@ datagrid:
                     label:            Updated
                     data_name:        rd.udapted
                     filter_by_having: true
+                fabric:
+                    type:  choice
+                    label: Fabric
+                    data_name: o.fabric
+                    options:
+                        field_options:
+                            multiple: true
+                            choices: @acme_custom.repository.choice.fabric->getChoices
         sorters:
             columns:
                 code:
@@ -78,6 +89,8 @@ datagrid:
                     data_name: rd.created
                 updated:
                     data_name: rd.udapted
+                fabric:
+                    data_name: rd.fabric
             default:
                 code: '%oro_datagrid.extension.orm_sorter.class%::DIRECTION_ASC'
 

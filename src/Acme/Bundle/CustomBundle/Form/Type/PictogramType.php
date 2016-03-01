@@ -27,7 +27,7 @@ class PictogramType extends CustomEntityType
                     'property_path'     => 'translations'
                 ]
             )
-            ->addEventSubscriber(new DisableFieldSubscriber('code'));;
+            ->addEventSubscriber(new DisableFieldSubscriber('code'));
     }
 
     /**

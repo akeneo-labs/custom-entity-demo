@@ -24,7 +24,7 @@ custom_entities:
                 service: pim_custom_entity.action.index
             edit:
                 acl: acme_enrich_brand_edit
-                form_type: pim_custom_entity
+                form_type: acme_enrich_brand
             create:
                 acl: acme_enrich_brand_create
                 form_type: pim_custom_entity

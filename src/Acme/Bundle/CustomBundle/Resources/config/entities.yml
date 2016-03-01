@@ -1,2 +1,3 @@
 parameters:
     pim_catalog.entity.product_value.class: Acme\Bundle\CustomBundle\Model\ProductValue
+    acme_custom.entity.brand.class: Acme\Bundle\CustomBundle\Entity\Brand
