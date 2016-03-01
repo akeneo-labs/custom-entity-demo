@@ -12,12 +12,6 @@ datagrid:
             fabric:
                 label: Fabric
                 class: AcmeCustomBundle:Brand
-            created:
-                label: Created
-                frontend_type: date
-            updated:
-                label: Updated
-                frontend_type: date
         properties:
             id: ~
             show_link:
@@ -63,16 +57,6 @@ datagrid:
                     type:      string
                     label:     Code
                     data_name: rd.code
-                created:
-                    type:             date
-                    label:            Created
-                    data_name:        rd.created
-                    filter_by_having: true
-                updated:
-                    type:             date
-                    label:            Updated
-                    data_name:        rd.udapted
-                    filter_by_having: true
                 fabric:
                     type:  choice
                     label: Fabric
@@ -85,10 +69,6 @@ datagrid:
             columns:
                 code:
                     data_name: rd.code
-                created:
-                    data_name: rd.created
-                updated:
-                    data_name: rd.udapted
                 fabric:
                     data_name: rd.fabric
             default:

@@ -16,10 +16,12 @@ datagrid:
                 label: Label
             created:
                 label: Created
-                frontend_type: date
+                type: product_value_datetime
+                frontend_type: datetime
             updated:
                 label: Updated
-                frontend_type: date
+                type: product_value_datetime
+                frontend_type: datetime
         properties:
             id: ~
             edit_link:
