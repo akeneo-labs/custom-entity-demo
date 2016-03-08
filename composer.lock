@@ -4,29 +4,29 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6b5173aa9ba9452fb0558e1547466c98",
-    "content-hash": "904da4349d854bb7cc6bba78ca3c073b",
+    "hash": "6965d20cadc34f1a47752774b2fd2bf8",
+    "content-hash": "24273c461dfa5592397da1b50f36e3c1",
     "packages": [
         {
             "name": "akeneo-labs/custom-entity-bundle",
-            "version": "dev-master",
+            "version": "v1.7.0",
             "target-dir": "Pim/Bundle/CustomEntityBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/akeneo-labs/CustomEntityBundle.git",
-                "reference": "7c589483816cf39286912960fda9fe3ba446ae5f"
+                "reference": "232fe8339ff0e01c0a93f9e1a71d0c51fd786229"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/akeneo-labs/CustomEntityBundle/zipball/7c589483816cf39286912960fda9fe3ba446ae5f",
-                "reference": "7c589483816cf39286912960fda9fe3ba446ae5f",
+                "url": "https://api.github.com/repos/akeneo-labs/CustomEntityBundle/zipball/232fe8339ff0e01c0a93f9e1a71d0c51fd786229",
+                "reference": "232fe8339ff0e01c0a93f9e1a71d0c51fd786229",
                 "shasum": ""
             },
             "require": {
-                "akeneo/pim-community-dev": "1.5.x-dev",
-                "doctrine/migrations": "1.0.0-alpha3@alpha"
+                "akeneo/pim-community-dev": "1.5.*"
             },
             "require-dev": {
+                "doctrine/migrations": "1.0.0-alpha3@alpha",
                 "fabpot/php-cs-fixer": "@stable",
                 "henrikbjorn/phpspec-code-coverage": "1.0.*",
                 "phpmd/phpmd": "2.3.*",
@@ -63,7 +63,7 @@
                 "integration",
                 "reference data"
             ],
-            "time": "2016-03-01 10:15:01"
+            "time": "2016-03-08 14:22:56"
         },
         {
             "name": "akeneo/measure-bundle",
@@ -110,16 +110,16 @@
         },
         {
             "name": "akeneo/pim-community-dev",
-            "version": "1.5.x-dev",
+            "version": "v1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/akeneo/pim-community-dev.git",
-                "reference": "77addeba790e0a09b3e4320837287ac6f44734bd"
+                "reference": "c4b716d10b2bc8e83741c08384bd5a98db8d76b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/akeneo/pim-community-dev/zipball/77addeba790e0a09b3e4320837287ac6f44734bd",
-                "reference": "77addeba790e0a09b3e4320837287ac6f44734bd",
+                "url": "https://api.github.com/repos/akeneo/pim-community-dev/zipball/c4b716d10b2bc8e83741c08384bd5a98db8d76b8",
+                "reference": "c4b716d10b2bc8e83741c08384bd5a98db8d76b8",
                 "shasum": ""
             },
             "require": {
@@ -260,10 +260,10 @@
             ],
             "description": "Akeneo PIM, the future of catalog management is open!",
             "support": {
-                "source": "https://github.com/akeneo/pim-community-dev/tree/1.5",
+                "source": "https://github.com/akeneo/pim-community-dev/tree/v1.5.0",
                 "issues": "https://github.com/akeneo/pim-community-dev/issues"
             },
-            "time": "2016-02-29 17:01:22"
+            "time": "2016-03-08 14:07:45"
         },
         {
             "name": "apy/jsfv-bundle",
@@ -3155,16 +3155,16 @@
         },
         {
             "name": "sensio/framework-extra-bundle",
-            "version": "v3.0.13",
+            "version": "v3.0.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioFrameworkExtraBundle.git",
-                "reference": "bf6be511f4f66d368baeb2cab617203d73cccf4e"
+                "reference": "cccf975c565ccd835bddc30a8fea5cdfe3357bf1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/bf6be511f4f66d368baeb2cab617203d73cccf4e",
-                "reference": "bf6be511f4f66d368baeb2cab617203d73cccf4e",
+                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/cccf975c565ccd835bddc30a8fea5cdfe3357bf1",
+                "reference": "cccf975c565ccd835bddc30a8fea5cdfe3357bf1",
                 "shasum": ""
             },
             "require": {
@@ -3213,7 +3213,7 @@
                 "annotations",
                 "controllers"
             ],
-            "time": "2016-02-12 08:17:23"
+            "time": "2016-03-01 10:50:07"
         },
         {
             "name": "sensio/generator-bundle",
@@ -3926,8 +3926,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "akeneo/pim-community-dev": 20,
-        "akeneo-labs/custom-entity-bundle": 20,
         "doctrine/migrations": 15
     },
     "prefer-stable": false,
