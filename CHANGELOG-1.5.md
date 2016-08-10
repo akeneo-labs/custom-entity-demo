@@ -1,3 +1,68 @@
+# 1.5.7 (2016-07-19)
+
+# 1.5.6 (2016-07-06)
+
+## Bug fixes
+
+- PIM-5864: "Attribute used as label" not displayed after being changed in the Family
+
+# 1.5.5 (2016-06-16)
+
+- PIM-5711: Don't create empty attribute translations if attributes are imported with empty labels
+- PIM-5829: Fix an issue with wrong parameters order in FamilyUpdater
+- PIM-5828: Correctly render product SKU in history pin bar
+- PIM-5844: Fix export with medias when identifier contains slash
+- PIM-4346: Fix datetimepicker on grid filters
+- PIM-5851: Display product state changes when classifying/declassifying a product
+
+# 1.5.4 (2016-06-01)
+
+## Bug fixes
+
+- PIM-5710: Fix thumbnail display after file upload in the product edit form
+- PIM-5811: Fix family export with multiple locales activated
+- PIM-5726: Fix number of product displayed on Product Grid when category panel is withdrawn
+- PIM-5801: Fix save in product edit form when attribute code is only numeric
+- PIM-5802: Keep data previously filled in select2 filter
+- PIM-5824: Fix memory leak on products export
+- PIM-5712: Keep reference in "akeneo_file_storage_file_info" table after removing a media attribute from a product
+
+# 1.5.3 (2016-05-13)
+
+## Bug fixes
+
+- PIM-5666: Fix product value saving with value '0'
+- PIM-5728: Fix bug in price and metric datagrid filters
+- PIM-5727: Fix permission issue on add-attribute extension on edit common attributes step
+- PIM-5754: Add labels to simple and multi select fields
+- PIM-5763: Add Boolean presenter for fields
+- PIM-5622: Fix NOT IN operator behavior for ORM groups filter
+- PIM-5756: Fix empty min and max numbers on attributes import
+- PIM-5655: Hide dropdown menu after action
+
+## Technical improvements
+
+- PIM-5762: Removed unused category filters on product datagrids
+- Upgrade "akeneo/measure-bundle" from "0.4.1" to "0.5.0", details in the release note https://github.com/akeneo/MeasureBundle/releases/tag/0.5.0
+
+## Bug fixes
+
+- PIM-5643: Fix default system locale was not fixed by the last PIM-5643 ticket, tagged in 1.5.2
+
+# 1.5.2 (2016-04-25)
+
+## Bug fixes
+
+- PIM-5697: Fix import form when a file extension is not allowed
+- PIM-5695: Do not format price with currency if data is null
+- PIM-5643: Fix default system locale
+
+# 1.5.1 (2016-03-09)
+
+## Bug fixes
+
+- Only UPGRADE-*.md files are now copied from the development version to the standard edition during `php composer.phar update`
+
 # 1.5.0 (2016-03-08)
 
 ## Bug fixes

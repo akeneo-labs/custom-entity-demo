@@ -13,16 +13,25 @@ use Symfony\Component\HttpKernel\Kernel;
 class AppKernel extends Kernel
 {
     /**
+     * Registers your custom bundles
+     *
+     * @return array
+     */
+    protected function registerProjectBundles()
+    {
+        return [
+            // your app bundles should be registered here
+            new Pim\Bundle\CustomEntityBundle\PimCustomEntityBundle(),
+            new Acme\Bundle\CustomBundle\AcmeCustomBundle(),
+        ];
+    }
+
+    /**
      * {@inheritdoc}
      */
     public function registerBundles()
     {
-        $bundles = [
-            // your app bundles should be registered here
-            // new Acme\Bundle\AppBundle\AcmeAppBundle(),
-            new Pim\Bundle\CustomEntityBundle\PimCustomEntityBundle(),
-            new Acme\Bundle\CustomBundle\AcmeCustomBundle(),
-        ];
+        $bundles = $this->registerProjectBundles();
 
         if (in_array($this->getEnvironment(), array('dev', 'test', 'behat'))) {
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
@@ -85,8 +94,6 @@ class AppKernel extends Kernel
             new Pim\Bundle\VersioningBundle\PimVersioningBundle(),
             new Pim\Bundle\WebServiceBundle\PimWebServiceBundle(),
             new Pim\Bundle\EnrichBundle\PimEnrichBundle(),
-            new Pim\Bundle\BaseConnectorBundle\PimBaseConnectorBundle(),
-            new Pim\Bundle\TransformBundle\PimTransformBundle(),
             new Pim\Bundle\CommentBundle\PimCommentBundle(),
             new Pim\Bundle\PdfGeneratorBundle\PimPdfGeneratorBundle(),
             new Pim\Bundle\ReferenceDataBundle\PimReferenceDataBundle(),
@@ -151,7 +158,6 @@ class AppKernel extends Kernel
             new JMS\SerializerBundle\JMSSerializerBundle(),
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
             new Liip\ImagineBundle\LiipImagineBundle(),
-            new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
         ];
     }
 
