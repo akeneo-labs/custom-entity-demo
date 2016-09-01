@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "943496eef5facf28426362590e201933",
-    "content-hash": "6edb5b60a636b43365fb102452c0df05",
+    "hash": "dfbde2dc1337dade0696c814572d401f",
+    "content-hash": "ff57a9ad970c8359faa6cd967fddabce",
     "packages": [
         {
             "name": "akeneo-labs/custom-entity-bundle",
@@ -14,16 +14,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/akeneo-labs/CustomEntityBundle.git",
-                "reference": "39fecc41b063bbf3244fb1ca0360bb4ce6c7bfff"
+                "reference": "9bd2de5b801e5323179cfb8eb158bfb20998d0b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/akeneo-labs/CustomEntityBundle/zipball/39fecc41b063bbf3244fb1ca0360bb4ce6c7bfff",
-                "reference": "39fecc41b063bbf3244fb1ca0360bb4ce6c7bfff",
+                "url": "https://api.github.com/repos/akeneo-labs/CustomEntityBundle/zipball/9bd2de5b801e5323179cfb8eb158bfb20998d0b1",
+                "reference": "9bd2de5b801e5323179cfb8eb158bfb20998d0b1",
                 "shasum": ""
             },
             "require": {
-                "akeneo/pim-community-dev": "1.6.*@dev"
+                "akeneo/pim-community-dev": "~1.6.0"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "@stable",
@@ -62,75 +62,28 @@
                 "integration",
                 "reference data"
             ],
-            "time": "2016-08-10 14:13:32"
-        },
-        {
-            "name": "akeneo/measure-bundle",
-            "version": "0.5.0",
-            "target-dir": "Akeneo/Bundle/MeasureBundle",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/akeneo/MeasureBundle.git",
-                "reference": "5afff134d42aa6de4deb111f7aed1771e7a523f9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/akeneo/MeasureBundle/zipball/5afff134d42aa6de4deb111f7aed1771e7a523f9",
-                "reference": "5afff134d42aa6de4deb111f7aed1771e7a523f9",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3",
-                "symfony/symfony": ">=2.1.0"
-            },
-            "require-dev": {
-                "phpspec/phpspec": "2.5.*"
-            },
-            "type": "symfony-bundle",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.5.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Akeneo\\Bundle\\MeasureBundle": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Akeneo Measure Bundle",
-            "homepage": "https://github.com/akeneo/MeasureBundle",
-            "keywords": [
-                "akeneo",
-                "convert",
-                "measure"
-            ],
-            "time": "2016-04-30 11:12:40"
+            "time": "2016-09-01 17:05:05"
         },
         {
             "name": "akeneo/pim-community-dev",
-            "version": "v1.6.0-ALPHA1",
+            "version": "v1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/akeneo/pim-community-dev.git",
-                "reference": "c2020ff0a849ee6551a82bfa386a86d85fe96de1"
+                "reference": "858f73ced8557df1ec4b30176d4e25499ef2a264"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/akeneo/pim-community-dev/zipball/c2020ff0a849ee6551a82bfa386a86d85fe96de1",
-                "reference": "c2020ff0a849ee6551a82bfa386a86d85fe96de1",
+                "url": "https://api.github.com/repos/akeneo/pim-community-dev/zipball/858f73ced8557df1ec4b30176d4e25499ef2a264",
+                "reference": "858f73ced8557df1ec4b30176d4e25499ef2a264",
                 "shasum": ""
             },
             "require": {
-                "akeneo/measure-bundle": "0.5.0",
                 "apy/jsfv-bundle": "2.0.1",
                 "ass/xmlsecurity": "1.1.1",
                 "box/spout": "2.5.0",
                 "doctrine/annotations": "1.2.6",
-                "doctrine/cache": "1.3.1",
+                "doctrine/cache": "1.6.0",
                 "doctrine/common": "2.4.2",
                 "doctrine/data-fixtures": "1.0.0",
                 "doctrine/doctrine-bundle": "1.2.0",
@@ -162,7 +115,6 @@
                 "sensio/framework-extra-bundle": "~3.0,>=3.0.2",
                 "sensio/generator-bundle": "2.3.5",
                 "symfony/assetic-bundle": "2.3.1",
-                "symfony/intl": "3.1.2",
                 "symfony/monolog-bundle": "2.10.0",
                 "symfony/swiftmailer-bundle": "2.3.8",
                 "symfony/symfony": "2.7.2",
@@ -210,7 +162,8 @@
                     }
                 },
                 "branch-alias": {
-                    "dev-master": "1.6.x-dev",
+                    "dev-master": "1.7.x-dev",
+                    "dev-1.6": "1.6.x-dev",
                     "dev-1.5": "1.5.x-dev",
                     "dev-1.4": "1.4.x-dev",
                     "dev-1.3": "1.3.x-dev",
@@ -262,10 +215,10 @@
             ],
             "description": "Akeneo PIM, the future of catalog management is open!",
             "support": {
-                "source": "https://github.com/akeneo/pim-community-dev/tree/v1.6.0-ALPHA1",
+                "source": "https://github.com/akeneo/pim-community-dev/tree/v1.6.1",
                 "issues": "https://github.com/akeneo/pim-community-dev/issues"
             },
-            "time": "2016-08-01 13:02:17"
+            "time": "2016-09-01 14:10:30"
         },
         {
             "name": "apy/jsfv-bundle",
@@ -576,37 +529,38 @@
         },
         {
             "name": "doctrine/cache",
-            "version": "v1.3.1",
+            "version": "v1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "cf483685798a72c93bf4206e3dd6358ea07d64e7"
+                "reference": "f8af318d14bdb0eff0336795b428b547bd39ccb6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/cf483685798a72c93bf4206e3dd6358ea07d64e7",
-                "reference": "cf483685798a72c93bf4206e3dd6358ea07d64e7",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/f8af318d14bdb0eff0336795b428b547bd39ccb6",
+                "reference": "f8af318d14bdb0eff0336795b428b547bd39ccb6",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.2"
+                "php": "~5.5|~7.0"
             },
             "conflict": {
                 "doctrine/common": ">2.2,<2.4"
             },
             "require-dev": {
-                "phpunit/phpunit": ">=3.7",
+                "phpunit/phpunit": "~4.8|~5.0",
+                "predis/predis": "~1.0",
                 "satooshi/php-coveralls": "~0.6"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.4.x-dev"
+                    "dev-master": "1.6.x-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Doctrine\\Common\\Cache\\": "lib/"
+                "psr-4": {
+                    "Doctrine\\Common\\Cache\\": "lib/Doctrine/Common/Cache"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -641,7 +595,7 @@
                 "cache",
                 "caching"
             ],
-            "time": "2014-09-17 14:24:04"
+            "time": "2015-12-31 16:37:02"
         },
         {
             "name": "doctrine/collections",
@@ -2258,7 +2212,7 @@
                     "email": "stof@notk.org"
                 },
                 {
-                    "name": "Knplabs",
+                    "name": "KnpLabs",
                     "homepage": "http://knplabs.com"
                 },
                 {
@@ -3971,7 +3925,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "akeneo/pim-community-dev": 15,
         "akeneo-labs/custom-entity-bundle": 20
     },
     "prefer-stable": false,

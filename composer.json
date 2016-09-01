@@ -19,10 +19,10 @@
         }
     },
     "require": {
-        "akeneo/pim-community-dev": "v1.6.0-ALPHA1",
+        "akeneo/pim-community-dev": "~1.6.0",
         "symfony/intl": "3.1.2",
         "sensio/generator-bundle": "2.3.5",
-        "akeneo-labs/custom-entity-bundle": "1.8.*@dev"
+        "akeneo-labs/custom-entity-bundle": "1.8.*"
     },
     "require-dev": {
         "doctrine/migrations": "1.2.2",
