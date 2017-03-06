@@ -90,11 +90,13 @@ datagrid:
                     empty_selection: pim_datagrid.mass_action.delete.empty_selection
                 launcherOptions:
                     icon: trash
+                className: AknActionButton
 
             quick_export_csv:
                 type: export
                 label: pim.grid.mass_action.quick_export.csv_all
                 icon: download
+                className: AknActionButton
                 handler: custom_quick_export
                 route: pim_customentity_quickexport
                 route_parameters:
@@ -109,7 +111,8 @@ datagrid:
             mass_edit:
                 type: redirect
                 label: Mass Edit
-                icon: edit
+                icon: pencil
+                className: AknActionButton
                 handler: custom_mass_edit
                 route: pim_customentity_massedit
                 route_parameters:

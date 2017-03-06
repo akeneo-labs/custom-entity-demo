@@ -92,7 +92,6 @@ class AppKernel extends Kernel
             new Pim\Bundle\DataGridBundle\PimDataGridBundle(),
             new Pim\Bundle\ImportExportBundle\PimImportExportBundle(),
             new Pim\Bundle\VersioningBundle\PimVersioningBundle(),
-            new Pim\Bundle\WebServiceBundle\PimWebServiceBundle(),
             new Pim\Bundle\EnrichBundle\PimEnrichBundle(),
             new Pim\Bundle\CommentBundle\PimCommentBundle(),
             new Pim\Bundle\PdfGeneratorBundle\PimPdfGeneratorBundle(),
@@ -100,6 +99,7 @@ class AppKernel extends Kernel
             new Pim\Bundle\ConnectorBundle\PimConnectorBundle(),
             new Pim\Bundle\LocalizationBundle\PimLocalizationBundle(),
             new Akeneo\Bundle\ClassificationBundle\AkeneoClassificationBundle(),
+            new Pim\Bundle\ApiBundle\PimApiBundle(),
         ];
     }
 
@@ -119,6 +119,7 @@ class AppKernel extends Kernel
             new Akeneo\Bundle\BufferBundle\AkeneoBufferBundle(),
             new Akeneo\Bundle\StorageUtilsBundle\AkeneoStorageUtilsBundle(),
             new Akeneo\Bundle\FileStorageBundle\AkeneoFileStorageBundle(),
+            new FOS\OAuthServerBundle\FOSOAuthServerBundle(),
         ];
     }
 
@@ -169,12 +170,10 @@ class AppKernel extends Kernel
     protected function getOroBundles()
     {
         return [
-            new Oro\Bundle\UIBundle\OroUIBundle(),
             new Oro\Bundle\AsseticBundle\OroAsseticBundle(),
             new Oro\Bundle\ConfigBundle\OroConfigBundle(),
             new Oro\Bundle\DataGridBundle\OroDataGridBundle(),
             new Oro\Bundle\FilterBundle\OroFilterBundle(),
-            new Oro\Bundle\FormBundle\OroFormBundle(),
             new Oro\Bundle\NavigationBundle\OroNavigationBundle(),
             new Oro\Bundle\RequireJSBundle\OroRequireJSBundle(),
             new Oro\Bundle\SecurityBundle\OroSecurityBundle(),
