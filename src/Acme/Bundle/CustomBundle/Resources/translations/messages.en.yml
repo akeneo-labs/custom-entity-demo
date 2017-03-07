@@ -39,6 +39,10 @@ brand:
         edit: Edit this brand
         show: Show this brand
         delete: Delete this brand
+    mass_edit:
+        title: Mass edit these Brands
+        subtitle: Edit this brand|Edit these brands
+        confirm: Confirm update
 
 color:
     overview: Color overview
