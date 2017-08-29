@@ -1,10 +1,11 @@
+# This file is auto-generated during the composer install
 parameters:
     database_driver: pdo_mysql
     database_host: localhost
     database_port: null
     database_name: custom_entity
-    database_user: root
-    database_password: root
+    database_user: akeneo_pim
+    database_password: akeneo_pim
     locale: en
     secret: ThisTokenIsNotSoSecretChangeIt
-    installed: '2016-09-01T17:12:01+00:00'
+    installed: '2017-08-29T12:36:03+02:00'

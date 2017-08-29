@@ -17,6 +17,5 @@ build/
 vendor
 bin
 composer.phar
-composer.lock
 .idea*
 
