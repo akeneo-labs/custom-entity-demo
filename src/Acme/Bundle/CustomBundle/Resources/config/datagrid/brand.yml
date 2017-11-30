@@ -80,7 +80,7 @@ datagrid:
                 label: pim.grid.mass_action.delete
                 entity_name: brand
                 acl_resource: ~
-                handler: mass_delete
+                handler: custom_entity_mass_delete
                 messages:
                     confirm_title: pim_datagrid.mass_action.delete.confirm_title
                     confirm_content: pim_datagrid.mass_action.delete.confirm_content

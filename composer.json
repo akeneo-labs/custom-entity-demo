@@ -21,7 +21,8 @@
     "require": {
         "akeneo/pim-community-dev": "1.7.*",
         "symfony/intl": "3.1.2",
-        "akeneo-labs/custom-entity-bundle": "1.10.*"
+        "akeneo-labs/custom-entity-bundle": "^1.10.4",
+        "doctrine/mongodb-odm-bundle": "^3.4"
     },
     "require-dev": {
         "doctrine/migrations": "1.2.2",

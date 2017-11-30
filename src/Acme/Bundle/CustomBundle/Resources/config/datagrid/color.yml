@@ -66,3 +66,20 @@ datagrid:
                     data_name: rd.name
             default:
                 code: '%oro_datagrid.extension.orm_sorter.class%::DIRECTION_ASC'
+        mass_actions:
+            delete:
+                type: delete
+                label: pim.grid.mass_action.delete
+                entity_name: color
+                acl_resource: ~
+                handler: custom_entity_mass_delete
+                messages:
+                    confirm_title: pim_datagrid.mass_action.delete.confirm_title
+                    confirm_content: pim_datagrid.mass_action.delete.confirm_content
+                    confirm_ok: pim_datagrid.mass_action.delete.confirm_ok
+                    success: pim_datagrid.mass_action.delete.success
+                    error: pim_datagrid.mass_action.delete.error
+                    empty_selection: pim_datagrid.mass_action.delete.empty_selection
+                launcherOptions:
+                    icon: trash
+                className: AknActionButton
