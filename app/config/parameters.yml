@@ -8,4 +8,4 @@ parameters:
     database_password: akeneo_pim
     locale: en
     secret: ThisTokenIsNotSoSecretChangeIt
-    installed: '2017-08-29T12:36:03+02:00'
+    installed: '2017-11-29T12:46:22+01:00'

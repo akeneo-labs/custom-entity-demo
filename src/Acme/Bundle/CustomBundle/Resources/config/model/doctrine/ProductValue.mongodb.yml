@@ -3,4 +3,4 @@ Acme\Bundle\CustomBundle\Model\ProductValue:
     fields:
         color:
             type: entity
-            targetEntity: Acme\Bundle\AppBundle\Entity\Color
+            targetEntity: Acme\Bundle\CustomBundle\Entity\Color
